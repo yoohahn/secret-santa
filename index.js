@@ -96,10 +96,10 @@ const delay = amount => {
   });
 };
 
-async function loop() {
+async function start() {
   for (let i = 0; i < persons.length; i++) {
     sendMail(persons[i]);
     await delay(5000);
   }
 }
-loop();
+start();
